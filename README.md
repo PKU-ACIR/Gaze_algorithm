@@ -28,3 +28,5 @@
    - Detectron2用于储存与Detectron2库相关的设置与模型，此库本身需要自行安装至计算机中
    - object_tracking路径下为物体追踪的算法，yolact路径下为yolact实例分割方法，它们需要一起使用。
    - gaze_estimation路径下为实现识别的方法，里面还包括描述人脸各部位的类和简单的头部姿态检测方法。
+5. 模型
+   -可以在百度网盘下载 链接：https://disk.pku.edu.cn/link/AAFEAEB524D3FC404989041B0F9F486140
