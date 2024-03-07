@@ -1,0 +1,28 @@
+---
+test:
+
+    load:
+        begin_step: 1
+        end_step: 25
+        steps: 1
+        meta_path: "res50/eth_pre_train"
+        tensor_path: "tensorboard/res50_trans_t_mpii"
+        folder: eth
+
+    data: 
+        image: "/datasets/FaceBased/MPIIFaceGaze/Image"
+        label: "/datasets/FaceBased/MPIIFaceGaze/Label"
+        name: mpii
+        header: True
+        isFolder: True
+        w_p: False
+
+
+    savename: "evaluation"
+
+    device: 0
+
+    reader: reader
+
+# dropout = 0
+# dim_feed = 512

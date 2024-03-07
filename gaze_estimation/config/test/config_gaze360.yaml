@@ -1,0 +1,28 @@
+---
+test:
+
+    load:
+        begin_step: 0
+        end_step: 25
+        steps: 1
+        meta_path: "transform/swin_vali"
+        tensor_path: "tensorboard/swin_gaze360"
+        folder: gaze360
+
+    data: 
+        image: "/datasets/gaze360_face/Image"
+        label: "/datasets/gaze360_face/Label"
+        name: gaze360
+        header: True
+        isFolder: True
+        w_p: False
+
+    savename: "evaluation"
+    personal: False
+
+    device: 0
+
+    reader: reader
+
+# dropout = 0
+# dim_feed = 512

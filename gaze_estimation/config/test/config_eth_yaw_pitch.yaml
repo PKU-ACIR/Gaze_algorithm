@@ -1,0 +1,24 @@
+---
+test:
+
+    load:
+        begin_step: 30
+        end_step: 45
+        steps: 1
+
+    data: 
+        image: "/datasets/xgaze_test/Image"
+        label: "/datasets/xgaze_test/Label"
+        name: eth
+        header: True
+        isFolder: True
+        w_p: True
+
+    savename: "evaluation"
+
+    device: 0
+
+    reader: reader
+
+# dropout = 0
+# dim_feed = 512

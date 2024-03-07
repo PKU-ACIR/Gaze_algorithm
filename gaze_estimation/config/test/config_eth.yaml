@@ -1,0 +1,27 @@
+---
+test:
+
+    load:
+        begin_step: 0
+        end_step: 25
+        steps: 1
+        meta_path: "transform/swin_vali"
+        tensor_path: "tensorboard/swin_more"
+        folder: eth
+
+    data: 
+        image: "/datasets/xgaze_test/Image"
+        label: "/datasets/xgaze_test/Label"
+        name: eth
+        header: True
+        isFolder: True
+        w_p: False
+
+    savename: "evaluation"
+
+    device: 0
+
+    reader: reader
+
+# dropout = 0
+# dim_feed = 512

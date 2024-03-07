@@ -1,0 +1,40 @@
+---
+train:
+
+    params:
+        batch_size: 64
+        epoch: 25
+        lr: 0.00003125
+        decay: 0.5
+        decay_step: 10
+        warmup: 0
+        
+
+    save:
+        #metapath: "res50/eth_pre_train"
+        metapath: "transform/swin_vali"
+        tensor_path: "train_board/swin"
+        folder: eth
+        model_name: swin
+        step: 1
+        
+
+    data:
+        image: "/datasets/xgaze/Image"
+        label: "/datasets/xgaze/Label"
+        header: True
+        name: eth
+        isFolder: True
+        w_p: False
+
+    pretrain:
+        enable: True
+        path: "transform/swin_vali/eth/checkpoint/Iter_24_swin.pt"
+        device: PLACEHOLDER
+
+    device: 0
+
+    reader: reader
+
+# dropout = 0
+# dim_feed = 512
